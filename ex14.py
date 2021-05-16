@@ -13,12 +13,13 @@ while (i < 10):
     a.append(int(input("PLease enter a number: ")))
     i += 1
 
-b = []
+b = set()
 i = 0
 
 while (i < len(a)):
-    if not (check(b, a[i])):
-        b.append(a[i])
+    # if not (check(b, a[i])):
+    #     b.append(a[i])
+    b.add(a[i])
     i += 1
 
 print(a)
